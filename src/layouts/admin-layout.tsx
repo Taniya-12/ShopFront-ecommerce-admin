@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { Sidebar } from '@/components/layout/sidebar'
 import { Navbar } from '@/components/layout/navbar'
 import { navItems } from '@/components/layout/nav-items'
+import { ChatWidget } from '@/components/common/chat-widget'
 import { cn } from '@/utils/cn'
 
 export function AdminLayout() {
@@ -29,6 +30,8 @@ export function AdminLayout() {
           <Outlet />
         </main>
       </div>
+
+      <ChatWidget />
     </div>
   )
 }
